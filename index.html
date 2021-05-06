@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:600px)" href="phone.css">
+    <link rel="stylesheet" media="screen and (max-height:800px)" href="css/phone.css">
+
+
+</head>
+<body>
+    <header class="navbar">
+        <a href="" class="logo">AKSHAT</a>
+        <ul>
+            <li><a href="C:\Users\Admin\Desktop\html\helloween\index.html" class="active">Home</a></li>
+            <li><a href="C:\Users\Admin\Desktop\html\light\light.html">Light</a></li>
+            <li><a href="C:\Users\Admin\Desktop\html\moon\moon.html">Moon </a></li>
+            <li><a href="C:\Users\Admin\Desktop\html\x\x.html">Anime</a></li>
+        </ul>   
+    </header>
+    <section>
+        <img src="bg.jpg" alt="" id="bg">
+        <img src="moon.png" alt="" id="moon">
+        <img src="house.png" alt="" class="png" id="house">
+        <img src="trees.png" alt="" class="png" id="trees">
+        <h2 id="text">Helloween</h2>
+    </section>
+    <div class="container">
+        <h2 id="text2">Hello user</h2>
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+        <input type="text" placeholder="E-mail">
+        <input type="text" placeholder="Phone Number">
+        <a href="#" id="btn">Submit</a>
+    </div>
+</body>
+<script>
+    let bg = document.getElementById("bg");
+    let moon = document.getElementById("moon");
+    let mountain = document.getElementById("house");
+    let road = document.getElementById("trees");
+    let text = document.getElementById("text");
+
+    window.addEventListener('scroll',function(){
+        var value = window.scrollY;
+        // bg.style.top = value * 0.5 + 'px';
+        moon.style.left = -value * 0.5 + 'px';
+        // house.style.top = value * 0.15 + 'px';
+        // trees.style.top = value * 0.15 + 'px';
+        text.style.top = value * 1 + 'px';
+      })
+
+</script>
+</html>

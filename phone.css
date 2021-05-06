@@ -1,0 +1,49 @@
+body{
+    background: black;
+    min-width: 420px;
+    min-height: 600px;
+    overflow-x: hidden;
+}
+.navbar{
+    position: sticky;
+    background: rgb(0, 0, 0, 0.5);
+    display: inline;
+    padding: 2px 5px;
+    width: 420px;
+}
+header ul li{
+    margin: 0;
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 6px 5px;
+    color: #fff;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+
+section img{
+    height: 0;
+    width: 0;
+}
+#trees{
+    height: 0px;
+    width: 0px;
+}
+
+#text{
+    position: relative;
+    font-size: 3em;
+    transform: translateY(-500px);
+    background: rgb(255, 255, 255, 0.75);
+    color: black;
+    padding: 0px 90px;
+}
+
+div.container{
+    position: relative;
+    top: -1000px;
+    width: 420px;
+    left: -110%;
+}
